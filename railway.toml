@@ -1,0 +1,10 @@
+[build]
+  builder = "nixpacks"
+
+[deploy]
+  healthcheckPath = "/"
+  healthcheckTimeout = 60
+
+[[services.database.postgres]]
+  plan = "developer-v2"
+  name = "linkpay-db"
